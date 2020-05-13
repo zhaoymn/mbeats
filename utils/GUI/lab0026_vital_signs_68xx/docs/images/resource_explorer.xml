@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource.explorer dir="./../" href="./overview.html" name="SimpleLink Academy 1.11-next" version="1.11">
+	<content href="." name="Browse files">
+		<type>weblink</type>
+	</content>
+	<contents href="./modules/splash/tirtos.htm" icon="./ccsresource/ti_rtos_icon.png" name="TI-RTOS">
+		<content href="./../tirtos_cc13xx_cc26xx_2_18_00_03/docs/Documentation_Overview_cc13xx_cc26xx.html" name="TI-RTOS Documentation (Local)">
+			<type>file</type>
+		</content>
+		<content href="http://processors.wiki.ti.com/index.php/TI-RTOS" name="TI-RTOS Wiki">
+			<type>weblink</type>
+		</content>
+		<contents name="Projects">
+			<contents name="Lab 1">
+				<content desc="lab1" dir="." href="./modules/projects/tirtos_basic_lab1/CCS/01_rtos_basic_lp.projectspec" name="CC2650 Launchpad">
+					<type>projectSpec
+
+						<attributes>
+							<attribute key="project.name" value="tirtos_lab1_cc2650launchxl"></attribute>
+						</attributes>
+					</type>
+				</content>
+				<content desc="lab1" dir="." href="./modules/projects/tirtos_basic_lab1/CCS/01_rtos_basic_st.projectspec" name="CC2650 SensorTag">
+					<type>projectSpec
+
+						<attributes>
+							<attribute key="project.name" value="tirtos_lab1_cc2650stk"></attribute>
+						</attributes>
+					</type>
+				</content>
+				<content desc="lab1" dir="." href="./modules/projects/tirtos_basic_lab1/CCS/01_rtos_basic_em.projectspec" name="CC2650 EM-7ID">
+					<type>projectSpec
+
+						<attributes>
+							<attribute key="project.name" value="tirtos_lab1_cc2650em7id"></attribute>
+						</attributes>
+					</type>
+				</content>
+			</contents>
+			<contents name="IR Generation">
+				<content desc="irgeneration" dir="." href="./modules/projects/tirtos_irgeneration/ccs/tirtos_irgeneration_lp.projectspec" name="CC2650 Launchpad">
+					<type>projectSpec
+
+						<attributes>
+							<attribute key="project.name" value="tirtos_irgeneration_lp"></attribute>
+						</attributes>
+					</type>
+				</content>
+			</contents>
+		</contents>
+		<content href="./modules/tirtos_01_basic/ti-rtos-introduction.pdf" name="TI-RTOS Introduction (pdf)">
+			<type>weblink</type>
+		</content>
+		<content href="./modules/tirtos_01_basic/tirtos_01_basic.html" name="TI-RTOS Basics Lab 1">
+			<type>weblink</type>
+		</content>
+		<content href="./modules/tirtos_02_irgeneration/tirtos_irgeneration.html" name="TI-RTOS IR Generation">
+			<type>weblink</type>
+		</content>
+	</contents>
+	<contents href="./modules/splash/ble.htm" icon="./ccsresource/bluetooth_icon.png" name="Bluetooth low energy">
+		<content href="./../simplelink/ble_sdk_2_02_00_31/docs/SWRU393_CC2640_BLE_Software_Developer's_Guide.pdf" name="BLE Software Developers Guide (pdf)">
+			<type>weblink</type>
+		</content>
+		<content href="http://www.ti.com/ble-wiki" name="Bluetooth low energy Wiki">
+			<type>weblink</type>
+		</content>
+		<contents href="./modules/splash/ble_projects.htm" name="Projects">
+			<contents name="Project Zero" href="./modules/projects/ble_projectzero/information.html">
+				<content desc="Project Zero App" dir="." href="./modules/projects/ble_projectzero/ccs/desktop/project_zero_app_cc2650launchxl.projectspec" name="App CC2650 LaunchPad">
+					<type>projectSpec
+
+						<attributes>
+							<attribute key="project.name" value="project_zero_app_cc2650launchxl"></attribute>
+							<attribute key="txt.import" value="
+								&lt;font size=&quot;+0&quot; color=&quot;firebrick&quot;&gt;
+								Note: Remember to import applicable Stack project as well, if it isn't automatically imported when importing App.
+								&lt;/font&gt;
+								&lt;br/&gt;&lt;br/&gt;&lt;/i&gt;
+								Files copied to workspace location (all other files in the IDE are linked to BLE SDK, TI-RTOS or SimpleLink Academy install directory)&lt;br/&gt;
+								&lt;ul&gt;
+								&lt;li&gt;Startup/ccfg_appBLE.c&lt;/li&gt;
+								&lt;li&gt;Startup/main.c&lt;/li&gt;
+								&lt;li&gt;Board/Board.h&lt;/li&gt;
+								&lt;li&gt;Board/CC2650_LAUNCHXL.c/h - Board file implementation&lt;/li&gt;
+								&lt;li&gt;TOOLS/appBLE_UartLog.cfg&lt;/li&gt;
+								&lt;li&gt;Application/project_zero.c&lt;/li&gt;
+								&lt;li&gt;Application/project_zero.h&lt;/li&gt;
+								&lt;li&gt;Profiles/led_ervice.c/h&lt;/li&gt;
+								&lt;li&gt;Profiles/button_service.c/h&lt;/li&gt;
+								&lt;li&gt;Profiles/data_service.c/h&lt;/li&gt;
+								&lt;li&gt;Profiles/devinfoservice.c/h&lt;/li&gt;
+								&lt;/ul&gt;
+								&lt;i&gt;"></attribute>
+							<attribute key="txt.build" value="&lt;font size=&quot;+1&quot; color=&quot;firebrick&quot;&gt;Tip: Automatically builds Stack project first if imported&lt;/font&gt;"></attribute>
+							<attribute key="txt.config.debugger" value="&lt;font color=&quot;firebrick&quot;&gt;If more than one debugger is connected, the serial numbers for the debugger that will be used must be entered manually.&lt;/font&gt;&lt;i&gt;"></attribute>
+							<attribute key="txt.launch" value="&lt;font size=&quot;+1&quot; color=&quot;firebrick&quot;&gt;Note: Remember to download Stack project to the device first. Unless changed, this needs only be done once.&lt;/font&gt;"></attribute>
+						</attributes>
+					</type>
+				</content>
+				<content desc="Project Zero App" dir="." href="./modules/projects/ble_projectzero/ccs/desktop/project_zero_app_cc2650stk.projectspec" name="App CC2650 SensorTag">
+					<type>projectSpec
+
+						<attributes>
+							<attribute key="project.name" value="project_zero_app_cc2650stk"></attribute>
+							<attribute key="txt.import" value="
+								&lt;font size=&quot;+0&quot; color=&quot;firebrick&quot;&gt;
+								Note: Remember to import applicable Stack project as well, if it isn't automatically imported when importing App.
+								&lt;/font&gt;
+								&lt;br/&gt;&lt;br/&gt;&lt;/i&gt;
+								Files copied to workspace location (all other files in the IDE are linked to BLE SDK, TI-RTOS or SimpleLink Academy install directory)&lt;br/&gt;
+								&lt;ul&gt;
+								&lt;li&gt;Startup/ccfg_appBLE.c&lt;/li&gt;
+								&lt;li&gt;Startup/main.c&lt;/li&gt;
+								&lt;li&gt;Board/Board.h&lt;/li&gt;
+								&lt;li&gt;Board/CC2650_LAUNCHXL.c/h - Board file implementation&lt;/li&gt;
+								&lt;li&gt;TOOLS/appBLE_UartLog.cfg&lt;/li&gt;
+								&lt;li&gt;Application/project_zero.c&lt;/li&gt;
+								&lt;li&gt;Application/project_zero.h&lt;/li&gt;
+								&lt;li&gt;Profiles/led_ervice.c/h&lt;/li&gt;
+								&lt;li&gt;Profiles/button_service.c/h&lt;/li&gt;
+								&lt;li&gt;Profiles/data_service.c/h&lt;/li&gt;
+								&lt;li&gt;Profiles/devinfoservice.c/h&lt;/li&gt;
+								&lt;/ul&gt;
+								&lt;i&gt;"></attribute>
+							<attribute key="txt.build" value="&lt;font size=&quot;+1&quot; color=&quot;firebrick&quot;&gt;Tip: Automatically builds Stack project first if imported&lt;/font&gt;"></attribute>
+							<attribute key="txt.config.debugger" value="&lt;font color=&quot;firebrick&quot;&gt;If more than one debugger is connected, the serial numbers for the debugger that will be used must be entered manually.&lt;/font&gt;&lt;i&gt;"></attribute>
+							<attribute key="txt.launch" value="&lt;font size=&quot;+1&quot; color=&quot;firebrick&quot;&gt;Note: Remember to download Stack project to the device first. Unless changed, this needs only be done once.&lt;/font&gt;"></attribute>
+						</attributes>
+					</type>
+				</content>
+				<content desc="Project Zero App" dir="." href="./modules/projects/ble_projectzero/ccs/desktop/project_zero_app_cc2650em7id.projectspec" name="App CC2650 EM-7ID">
+					<type>projectSpec
+
+						<attributes>
+							<attribute key="project.name" value="project_zero_app_cc2650em7id"></attribute>
+							<attribute key="txt.import" value="
+								&lt;font size=&quot;+0&quot; color=&quot;firebrick&quot;&gt;
+								Note: Remember to import applicable Stack project as well, if it isn't automatically imported when importing App.
+								&lt;/font&gt;
+								&lt;br/&gt;&lt;br/&gt;&lt;/i&gt;
+								Files copied to workspace location (all other files in the IDE are linked to BLE SDK, TI-RTOS or SimpleLink Academy install directory)&lt;br/&gt;
+								&lt;ul&gt;
+								&lt;li&gt;Startup/ccfg_appBLE.c&lt;/li&gt;
+								&lt;li&gt;Startup/main.c&lt;/li&gt;
+								&lt;li&gt;Board/Board.h&lt;/li&gt;
+								&lt;li&gt;Board/CC2650_LAUNCHXL.c/h - Board file implementation&lt;/li&gt;
+								&lt;li&gt;TOOLS/appBLE_UartLog.cfg&lt;/li&gt;
+								&lt;li&gt;Application/project_zero.c&lt;/li&gt;
+								&lt;li&gt;Application/project_zero.h&lt;/li&gt;
+								&lt;li&gt;Profiles/led_ervice.c/h&lt;/li&gt;
+								&lt;li&gt;Profiles/button_service.c/h&lt;/li&gt;
+								&lt;li&gt;Profiles/data_service.c/h&lt;/li&gt;
+								&lt;li&gt;Profiles/devinfoservice.c/h&lt;/li&gt;
+								&lt;/ul&gt;
+								&lt;i&gt;"></attribute>
+							<attribute key="txt.build" value="&lt;font size=&quot;+1&quot; color=&quot;firebrick&quot;&gt;Tip: Automatically builds Stack project first if imported&lt;/font&gt;"></attribute>
+							<attribute key="txt.config.debugger" value="&lt;font color=&quot;firebrick&quot;&gt;If more than one debugger is connected, the serial numbers for the debugger that will be used must be entered manually.&lt;/font&gt;&lt;i&gt;"></attribute>
+							<attribute key="txt.launch" value="&lt;font size=&quot;+1&quot; color=&quot;firebrick&quot;&gt;Note: Remember to download Stack project to the device first. Unless changed, this needs only be done once.&lt;/font&gt;"></attribute>
+						</attributes>
+					</type>
+				</content>
+				<content desc="Project Zero Stack" dir="." href="./modules/projects/ble_projectzero/ccs/desktop/project_zero_stack_cc2650.projectspec" name="Stack CC2650">
+					<type>projectSpec
+
+						<attributes>
+							<attribute key="project.name" value="ProjectZeroStack_CC2650LAUNCHXL"></attribute>
+							<attribute key="txt.config.debugger" value="&lt;font color=&quot;firebrick&quot;&gt;If more than one debugger is connected, the serial numbers for the debugger that will be used must be entered manually.&lt;/font&gt;&lt;i&gt;"></attribute>
+							<attribute key="txt.launch" value="&lt;font size=&quot;+1&quot; color=&quot;firebrick&quot;&gt;Note: This project should be downloaded to the device first, before the App. Unless changed, this needs only be done once.&lt;/font&gt;"></attribute>
+						</attributes>
+					</type>
+				</content>
+			</contents>
+			<contents name="MSP432 Project Zero" href="./modules/projects/ble_msp_projectzero/information.html">
+				<content desc="msp432_projectzero application" dir="." href="./modules/projects/ble_msp_projectzero/ccs/projectzero_sap_msp432launchxl.projectspec" name="Project Zero MSP432 LaunchPad">
+					<type>projectSpec
+
+						<attributes>
+							<attribute key="project.name" value="project_zero_ble_sap_msp432launchxl"></attribute>
+							<attribute key="txt.import" value="
+								&lt;font size=&quot;+1&quot; color=&quot;firebrick&quot;&gt;
+								&lt;/font&gt;
+								&lt;br/&gt;&lt;br/&gt;&lt;/i&gt;
+								Files copied to workspace (all other files are linked to BLE SDK, TI-RTOS, or these training modules' install directory)&lt;br/&gt;
+								&lt;ul&gt;
+								&lt;li&gt;Application/ProjectZero.c&lt;/li&gt;
+                                &lt;li&gt;Application/ProjectZero.h&lt;/li&gt;
+								&lt;li&gt;Application/buttonservice.c&lt;/li&gt;
+								&lt;li&gt;Application/buttonservice.h&lt;/li&gt;
+                                &lt;li&gt;Application/dataservice.c&lt;/li&gt;
+								&lt;li&gt;Application/dataservice.h&lt;/li&gt;
+								&lt;li&gt;Application/LEDservice.c&lt;/li&gt;
+                                &lt;li&gt;Application/LEDservice.h&lt;/li&gt;
+								&lt;/ul&gt;
+								&lt;i&gt;"></attribute>
+
+							<attribute key="txt.config.debugger" value="&lt;font size=&quot;+1&quot; color=&quot;firebrick&quot;&gt;&lt;/font&gt;&lt;br/&gt;&lt;/i&gt;&lt;font color=&quot;firebrick&quot;&gt;(If more than one is connected, the serial numbers for the debugger that will be used must be entered manually)&lt;/font&gt;&lt;i&gt;"></attribute>
+
+						</attributes>
+					</type>
+				</content>
+			</contents>
+			<content name="HostTest"  href="./modules/projects/ble_hosttest/information.html">
+			</content>
+		</contents>
+		<contents href="./modules/splash/ble_tools.htm" name="Tools">
+			<contents name="SmartRF Packet Sniffer">
+				<content href="http://www.ti.com/lit/zip/swrc045" name="Download Packet Sniffer">
+					<type>webfile</type>
+				</content>
+				<content href="http://processors.wiki.ti.com/index.php/BLE_sniffer_guide" name="BLE Sniffing Guide">
+					<type>weblink</type>
+				</content>
+			</contents>
+			<contents name="BLE Device Monitor">
+				<content href="http://www.ti.com/lit/zip/swrc258" name="Download Device Monitor">
+					<type>webfile</type>
+				</content>
+				<content href="http://processors.wiki.ti.com/index.php/BLE_Device_Monitor_User_Guide" name="Device Monitor User Guide">
+					<type>weblink</type>
+				</content>
+			</contents>
+		</contents>
+		<content href="./modules/ble_01_basic/ble_01_basic.html" name="BLE Basics">
+			<type>weblink</type>
+		</content>
+		<content href="./modules/ble_01_bds/ble_01_bds.html" name="Bluetooth Developer Studio">
+			<type>weblink</type>
+		</content>
+		<content href="./modules/ble_01_custom_profile/ble_01_custom_profile.html" name="BLE Custom Profile">
+			<type>weblink</type>
+		</content>
+		<content href="./modules/ble_snp_sap_intro/ble_snp_sap_intro.html" name="BLE SNP/SAP Intro">
+			<type>weblink</type>
+		</content>
+	</contents>
+<contents href="./modules/splash/prop.htm" icon="./ccsresource/sub1.png" name="Proprietary RF">
+	<content href="./modules/prop_01_basic/prop_01_basic.html" name="Basic RX and TX" >
+		<type>weblink</type>
+	</content>
+	<content href="./modules/prop_02_wsn_example/prop_02_wsn_example.html" name="Wireless Sensor Network" >
+		<type>weblink</type>
+	</content>
+	<content href="./modules/prop_03_easylink_nwp/prop_03_easylink_nwp.html" name="EasyLink Network Processor API" >
+		<type>weblink</type>
+	</content>
+	<content href="./modules/prop_04_cc1350lpdm/prop_04_cc1350lpdm.html" name="CC1350 Dual Mode Getting Started" >
+		<type>weblink</type>
+	</content>
+	<content href="./modules/prop_05_cc1350lpdm_project_zero/prop_05_cc1350lpdm_project_zero.html" name="CC1350 Dual Mode Project 0" >
+		<type>weblink</type>
+	</content>
+</contents>
+<contents href="./modules/splash/154.htm" icon="./ccsresource/sub1.png" name="TI 15.4-Stack">
+	<content href="./modules/154-stack_01_sensor_collector/154-stack_01_sensor_collector.html" name="Sensor and Collector" >
+		<type>weblink</type>
+	</content>
+</contents>
+ <contents href="./modules/splash/scif.htm" icon="./ccsresource/scs.png" name="Sensor Controller">
+   <contents href="./modules/splash/sc_projects.htm" name="Projects">
+     <contents name="ADC Window Monitor" href="./modules/projects/sensor_controller_basic/information.html">
+       <content desc="ADC Window Monitor for LaunchPad Project" dir="." href="./modules/projects/sc_basic_lab1/CCS/adc_window_monitor_launchpad_tirtos.projectspec" name="CC2640R2 LaunchPad">
+         <type>projectSpec
+           <attributes>
+             <attribute key="project.name" value="adc_window_monitor_launchpad_tirtos"></attribute>
+               <attribute key="txt.import" value="
+               The following sensor controller driver files are linked so that you can generate and output new driver files from Sensor Controller Studio (SCS) without having to either manually drag and drop the new driver source files or changing the output directory in the SCS project settings.
+               &lt;br/&gt;
+               &lt;ul&gt;
+               &lt;li&gt;C:/ti/scs_academy/i2c_light_sensor/source/main_tirtos.c&lt;/li&gt;
+               &lt;li&gt;C:/ti/scs_academy/i2c_light_sensor/source/scif.c&lt;/li&gt;
+               &lt;li&gt;C:/ti/scs_academy/i2c_light_sensor/source/scif.h&lt;/li&gt;
+               &lt;li&gt;C:/ti/scs_academy/i2c_light_sensor/source/scif_framework.c&lt;/li&gt;
+               &lt;li&gt;C:/ti/scs_academy/i2c_light_sensor/source/scif_framework.h&lt;/li&gt;
+               &lt;li&gt;C:/ti/scs_academy/i2c_light_sensor/source/scif_osal_tirtos.c&lt;/li&gt;
+               &lt;i&gt;">
+               </attribute>
+           </attributes>
+         </type>
+       </content>
+     </contents>
+			<contents name="ADC Ranger" href="./modules/projects/sc_adc_ranger/information.html">
+				<content desc="ADC Ranger" dir="." href="./modules/projects/sc_adc_ranger/adc_ranger/ccs/adc_ranger_CC2650_LAUNCHXL.projectspec" name="App (no RF) CC2650 Launchpad">
+					<type>projectSpec
+
+						<attributes>
+							<attribute key="project.name" value="adc_ranger_cc2650_launchxl"></attribute>
+							<attribute key="txt.import" value="
+								Files copied to workspace location (all other files in the IDE are linked to BLE SDK, TI-RTOS or SimpleLink Academy install directory)&lt;br/&gt;
+								&lt;ul&gt;
+								&lt;li&gt;Startup/main.c&lt;/li&gt;
+								&lt;li&gt;Application/mainTask.c&lt;/li&gt;
+								&lt;li&gt;Application/scTask.c&lt;/li&gt;
+								&lt;li&gt;Application/application.h&lt;/li&gt;
+								&lt;li&gt;Scif/scif.c/h&lt;/li&gt;
+								&lt;li&gt;Scif/scif_framework.c/h&lt;/li&gt;
+								&lt;li&gt;Scif/scif_osal_tirtos.c/h&lt;/li&gt;
+								&lt;/ul&gt;
+								&lt;i&gt;"></attribute>
+							<attribute key="txt.config.debugger" value="&lt;font color=&quot;firebrick&quot;&gt;If more than one debugger is connected, the serial numbers for the debugger that will be used must be entered manually.&lt;/font&gt;&lt;i&gt;"></attribute>
+						</attributes>
+					</type>
+				</content>
+				<content desc="ADC Ranger" dir="." href="./modules/projects/sc_adc_ranger/adc_ranger/ccs/adc_ranger_CC1350_LAUNCHXL.projectspec" name="App (no RF) CC1350 Launchpad">
+					<type>projectSpec
+
+						<attributes>
+							<attribute key="project.name" value="adc_ranger_cc1350_launchxl"></attribute>
+							<attribute key="txt.import" value="
+								Files copied to workspace location (all other files in the IDE are linked to BLE SDK, TI-RTOS or SimpleLink Academy install directory)&lt;br/&gt;
+								&lt;ul&gt;
+								&lt;li&gt;Startup/main.c&lt;/li&gt;
+								&lt;li&gt;Application/mainTask.c&lt;/li&gt;
+								&lt;li&gt;Application/scTask.c&lt;/li&gt;
+								&lt;li&gt;Application/application.h&lt;/li&gt;
+								&lt;li&gt;Scif/scif.c/h&lt;/li&gt;
+								&lt;li&gt;Scif/scif_framework.c/h&lt;/li&gt;
+								&lt;li&gt;Scif/scif_osal_tirtos.c/h&lt;/li&gt;
+								&lt;/ul&gt;
+								&lt;i&gt;"></attribute>
+							<attribute key="txt.config.debugger" value="&lt;font color=&quot;firebrick&quot;&gt;If more than one debugger is connected, the serial numbers for the debugger that will be used must be entered manually.&lt;/font&gt;&lt;i&gt;"></attribute>
+						</attributes>
+					</type>
+				</content>
+				<content desc="SC ADC Ranger - BLE" dir="." href="./modules/projects/sc_adc_ranger/adc_ranger_ble/ccs/desktop/adc_ranger_ble_CC2650_LAUNCHXL.projectspec" name="App BLE CC2650 Launchpad">
+					<type>projectSpec
+
+						<attributes>
+							<attribute key="project.name" value="adc_ranger_ble_app_cc2650_launchxl"></attribute>
+							<attribute key="txt.import" value="
+								&lt;font size=&quot;+0&quot; color=&quot;firebrick&quot;&gt;
+								Note: This project is based on Project Zero for BLE and will automatically import the Project Zero stack project into the workspace if it doesn't exist.
+								&lt;/font&gt;
+								&lt;br&gt;
+								Files copied to workspace location (all other files in the IDE are linked to BLE SDK, TI-RTOS or SimpleLink Academy install directory)&lt;br/&gt;
+								&lt;ul&gt;
+								&lt;li&gt;ICallBLE/ble_user_config.c/h&lt;/li&gt;
+								&lt;li&gt;Include/gapbondmgr.h&lt;/li&gt;
+								&lt;li&gt;PROFILES/devinfoservice.c/h&lt;/li&gt;
+								&lt;li&gt;PROFILES/oad.c/h&lt;/li&gt;
+								&lt;li&gt;PROFILES/oad_target.h&lt;/li&gt;
+								&lt;li&gt;PROFILES/oad_target_external_flash.c&lt;/li&gt;
+								&lt;li&gt;PROFILES/peripheral.c/h&lt;/li&gt;
+								&lt;li&gt;Startup/ccfg_app_ble.c&lt;/li&gt;
+								&lt;li&gt;Startup/main.c&lt;/li&gt;
+								&lt;li&gt;Application/project_zero.c/h&lt;/li&gt;
+								&lt;li&gt;Application/sc_task.c&lt;/li&gt;
+								&lt;li&gt;Utils/custom_fmt.h&lt;/li&gt;
+								&lt;li&gt;TOOLS/app_ble_uartlog.cfg&lt;/li&gt;
+								&lt;li&gt;Scif/scif.c/h&lt;/li&gt;
+								&lt;li&gt;Scif/scif_framework.c/h&lt;/li&gt;
+								&lt;li&gt;Scif/scif_osal_tirtos.c/h&lt;/li&gt;
+								&lt;li&gt;Board/CC2650_LAUNCHXL.c/h&lt;/li&gt;
+								&lt;li&gt;Board/Board.h&lt;/li&gt;
+								&lt;/ul&gt;
+								&lt;i&gt;"></attribute>
+							<attribute key="txt.config.debugger" value="&lt;font color=&quot;firebrick&quot;&gt;If more than one debugger is connected, the serial numbers for the debugger that will be used must be entered manually.&lt;/font&gt;&lt;i&gt;"></attribute>
+						</attributes>
+					</type>
+				</content>
+				<content desc="SC ADC Ranger - Prop RF" dir="." href="./modules/projects/sc_adc_ranger/adc_ranger_prop/ccs/adc_ranger_prop_CC1350_LAUNCHXL.projectspec" name="App Prop RF CC1350 Launchpad">
+					<type>projectSpec
+
+						<attributes>
+							<attribute key="project.name" value="adc_ranger_prop_cc1350_launchxl"></attribute>
+							<attribute key="txt.import" value="
+								Files copied to workspace location (all other files in the IDE are linked to BLE SDK, TI-RTOS or SimpleLink Academy install directory)&lt;br/&gt;
+								&lt;ul&gt;
+								&lt;li&gt;Startup/main.c&lt;/li&gt;
+								&lt;li&gt;Application/mainTask.c&lt;/li&gt;
+								&lt;li&gt;Application/scTask.c&lt;/li&gt;
+								&lt;li&gt;Application/application.h&lt;/li&gt;
+								&lt;li&gt;Scif/scif.c/h&lt;/li&gt;
+								&lt;li&gt;Scif/scif_framework.c/h&lt;/li&gt;
+								&lt;li&gt;Scif/scif_osal_tirtos.c/h&lt;/li&gt;
+								&lt;li&gt;EasyLink/EasyLink.c/h&lt;/li&gt;
+								&lt;li&gt;EasyLink/smartrf_settings_predefined.c/h&lt;/li&gt;
+								&lt;li&gt;SmartRF_Settings/smartrf_settings.c/h&lt;/li&gt;
+								&lt;li&gt;Utils/custom_fmt.c/h&lt;/li&gt;
+								&lt;/ul&gt;
+								&lt;i&gt;"></attribute>
+							<attribute key="txt.config.debugger" value="&lt;font color=&quot;firebrick&quot;&gt;If more than one debugger is connected, the serial numbers for the debugger that will be used must be entered manually.&lt;/font&gt;&lt;i&gt;"></attribute>
+						</attributes>
+					</type>
+				</content>
+			</contents>
+		</contents>
+		<content href="./modules/sc_01_basic/sc_01_basic.html" name="SC Studio Basics">
+			<type>weblink</type>
+		</content>
+		<content href="./modules/sc_01_project_from_scratch/sc_01_project_from_scratch.html" name="SC Integrate Application">
+			<type>weblink</type>
+		</content>
+		<content href="./modules/sc_02_ranger/sc_02_ranger.html" name="SC Task Control (Ultrasonic ranger, ADC)">
+			<type>weblink</type>
+		</content>
+	</contents>
+</resource.explorer>

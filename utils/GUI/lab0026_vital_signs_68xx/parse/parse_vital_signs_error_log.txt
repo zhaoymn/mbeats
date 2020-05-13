@@ -1,0 +1,6 @@
+错误使用 strsplit (line 80)
+第一个输入必须为字符矢量或字符串标量。
+
+出错 parse_vitalSigns_demo_dat_file (line 53)
+
+MATLAB:strsplit:InvalidStringType
