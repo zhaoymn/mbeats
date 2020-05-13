@@ -3,7 +3,7 @@
 
 1. syn_time.py time synchronization for windows
 
-2. GUI/ the PC end for collect mmwave readings based on [TI mmWave Industrial Toolbox](http://dev.ti.com/tirex/explore/node?node=ADTLXelX36I6iOJjRnxYYA__VLyFKFf__LATEST)
+2. GUI/ the PC end for collect mmwave readings and controlling servo motor via Arduino based on [TI mmWave Industrial Toolbox](http://dev.ti.com/tirex/explore/node?node=ADTLXelX36I6iOJjRnxYYA__VLyFKFf__LATEST)
 
 3. APP-Android/ Application for Android Phone to communicate with Polar H10 and collect ground truth. Based on [Polar demo applications](https://github.com/polarofficial/polar-ble-sdk/tree/master/demos/Android-Demos/PolarSDK-ECG-HR-Demo).
 
